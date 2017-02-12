@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="registrospublicosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="matriculado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="noMatricula" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="razonSocial_nombre" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="propietario" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ubicacions" Relationship="Self.matriculadoid" FromRole="matriculado" ToRole="ubicacion" />
+  </EntityType>
+  <EntityType Name="ubicacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="matriculado_id" Type="Int32" />
+    <Property Name="latitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="matriculado" Relationship="Self.matriculadoid" FromRole="ubicacion" ToRole="matriculado" />
+  </EntityType>
+  <Association Name="matriculadoid">
+    <End Role="matriculado" Type="Self.matriculado" Multiplicity="0..1" />
+    <End Role="ubicacion" Type="Self.ubicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="matriculado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ubicacion">
+        <PropertyRef Name="matriculado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="registrospublicosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="matriculadoes" EntityType="Self.matriculado" />
+    <EntitySet Name="ubicacions" EntityType="Self.ubicacion" />
+    <AssociationSet Name="matriculadoid" Association="Self.matriculadoid">
+      <End Role="matriculado" EntitySet="matriculadoes" />
+      <End Role="ubicacion" EntitySet="ubicacions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

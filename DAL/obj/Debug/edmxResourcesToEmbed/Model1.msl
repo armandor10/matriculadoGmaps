@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="registrospublicosModelStoreContainer" CdmEntityContainer="registrospublicosEntities">
+    <EntitySetMapping Name="matriculadoes">
+      <EntityTypeMapping TypeName="registrospublicosModel.matriculado">
+        <MappingFragment StoreEntitySet="matriculado">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="noMatricula" ColumnName="noMatricula" />
+          <ScalarProperty Name="razonSocial_nombre" ColumnName="razonSocial_nombre" />
+          <ScalarProperty Name="propietario" ColumnName="propietario" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubicacions">
+      <EntityTypeMapping TypeName="registrospublicosModel.ubicacion">
+        <MappingFragment StoreEntitySet="ubicacion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="matriculado_id" ColumnName="matriculado_id" />
+          <ScalarProperty Name="latitud" ColumnName="latitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

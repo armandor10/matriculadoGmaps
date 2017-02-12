@@ -1,0 +1,17 @@
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\BLL.dll.config
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\BLL.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\BLL.pdb
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\DAL.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\entidades.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\EntityFramework.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\MySql.Data.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\MySql.Web.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\DAL.pdb
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\entidades.pdb
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\EntityFramework.xml
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\obj\Debug\BLL.dll
+C:\Users\arman\documents\visual studio 2015\Projects\comseguridad\BLL\obj\Debug\BLL.pdb
